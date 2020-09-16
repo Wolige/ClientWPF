@@ -1,0 +1,21 @@
+﻿<Window x:Class="ClientWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWPF"
+        mc:Ignorable="d"
+        Name="WindowOption"
+        Title="MainWindow" 
+        Icon="favicon.ico"
+        Closing="WindowOption_Closing"
+        StateChanged="WindowOption_StateChanged"
+        >
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Name="label" Content="" FontSize="30"/>
+            <ProgressBar Name="progressbar" Foreground="Red" Margin="0,15,0,0" Width="280" Height="20"/>
+        </StackPanel>
+        <Image Stretch="Fill" Grid.Row="0" Grid.Column="0" Name="Image" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center" Source="8noY06.jpg" />
+    </Grid>
+</Window>
